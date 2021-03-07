@@ -1,5 +1,5 @@
 import React, { createContext, useCallback, useEffect, useState } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import { TOKEN_POST, TOKEN_VALIDATE_POST, USER_GET } from "../../api";
 
 export const UserContext = createContext();
@@ -24,6 +24,7 @@ export const UserStorage = ({ children }) => {
       setError(null);
       setLoading(true);
       const { url, options } = TOKEN_POST({ username, password });
+      console.log(url, options);
       const response = await fetch(url, options);
       console.log(response);
 
