@@ -6,7 +6,7 @@ export const UserContext = createContext();
 
 export const UserStorage = ({ children }) => {
   const [data, setData] = useState(null);
-  const [isLogged, setIsLogged] = useState(false);
+  const [isLogged, setIsLogged] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
@@ -78,6 +78,8 @@ export const UserStorage = ({ children }) => {
         } finally {
           setLoading(false);
         }
+      } else {
+        setIsLogged(false);
       }
     }
     autoLogin();
