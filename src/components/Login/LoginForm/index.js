@@ -1,10 +1,12 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { TOKEN_POST, USER_GET } from "../../../api";
 import useForm from "../../../hooks/useForm";
 import Button from "../../Forms/Button";
 import Input from "../../Forms/Input";
 import { UserContext } from "../../../contexts/UserContext";
+import Error from "../../Helper/Error";
+import styles from "./style.module.css";
+import stylesBtn from "../../Forms/Button/style.module.css";
 
 export default function LoginForm() {
   const username = useForm();
@@ -21,9 +23,9 @@ export default function LoginForm() {
   }
 
   return (
-    <section>
-      <h1>Login</h1>
-      <form onSubmit={handleLogin}>
+    <section className="animeLeft">
+      <h1 className="title">Login</h1>
+      <form onSubmit={handleLogin} className={styles.form}>
         <Input label="Usuário" type="text" name="username" {...username} />
 
         <Input label="Senha" type="password" name="password" {...password} />
@@ -33,9 +35,18 @@ export default function LoginForm() {
         ) : (
           <Button>Entrar</Button>
         )}
-        {error && <p>{error}</p>}
+        <Error error={error} />
       </form>
-      <Link to="/login/criar">Cadastrar</Link>
+      <Link className={styles.lost} to="/login/perdeu">
+        Esqueceu sua senha?
+      </Link>
+      <div className={styles.cadastro}>
+        <h2 className={styles.subtitle}>Cadastre-se</h2>
+        <p>Ainda não possui conta? Cadastre-se no site.</p>
+        <Link className={stylesBtn.button} to="/login/criar">
+          Cadastrar
+        </Link>
+      </div>
     </section>
   );
 }
