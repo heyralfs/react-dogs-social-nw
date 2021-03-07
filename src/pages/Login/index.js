@@ -1,11 +1,16 @@
-import React from "react";
-import { Route, Routes } from "react-router";
+import React, { useContext } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
 import LoginForm from "../../components/Login/LoginForm";
 import LoginCreate from "../../components/Login/LoginCreate";
 import LoginPasswordLost from "../../components/Login/LoginPasswordLost";
 import LoginPasswordReset from "../../components/Login/LoginPasswordReset";
+import { UserContext } from "../../contexts/UserContext";
 
-export default function Login() {
+const Login = () => {
+  const { isLogged } = useContext(UserContext);
+
+  if (isLogged) return <Navigate to="/conta" />;
+
   return (
     <div>
       <Routes>
@@ -16,4 +21,6 @@ export default function Login() {
       </Routes>
     </div>
   );
-}
+};
+
+export default Login;
