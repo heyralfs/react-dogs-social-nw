@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap");
 
+/* custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.5);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 188, 17, 0.6);
+  border-radius: 4px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 188, 17, 0.8);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
