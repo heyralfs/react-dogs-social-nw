@@ -30,8 +30,8 @@ const Feed = ({ user }) => {
     window.addEventListener("scroll", infiniteScroll);
 
     return () => {
-      window.removeEventListener("wheel");
-      window.removeEventListener("scroll");
+      window.removeEventListener("wheel", infiniteScroll);
+      window.removeEventListener("scroll", infiniteScroll);
     };
   }, [infinite]);
 
