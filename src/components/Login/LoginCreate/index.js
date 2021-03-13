@@ -6,6 +6,7 @@ import Error from "../../Helper/Error";
 import { USER_POST } from "../../../api";
 import { UserContext } from "../../../contexts/UserContext";
 import useFetch from "../../../hooks/useFetch";
+import Head from "../../Helper/Head";
 
 export default function LoginCreate() {
   const username = useForm();
@@ -33,7 +34,10 @@ export default function LoginCreate() {
 
   return (
     <section className="animeLeft">
+      <Head title="Cadastre-se" />
+
       <h1 className="title">Cadastre-se</h1>
+
       <form onSubmit={handleCreate}>
         <Input label="Usuário" type="text" name="username" {...username} />
         <Input label="E-mail" type="email" name="email" {...email} />
