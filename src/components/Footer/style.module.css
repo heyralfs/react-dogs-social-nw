@@ -1,0 +1,22 @@
+.footer {
+  background: #fb1;
+  padding: 3rem;
+  min-height: 11rem;
+  text-align: center;
+  color: #764701;
+}
+
+.footer p {
+  margin-top: 1rem;
+}
+
+.footer p:last-child,
+.footer p:last-child a {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.footer p:last-child a {
+  text-decoration: underline;
+  color: #764701;
+}
