@@ -9,7 +9,7 @@ export default function Footer() {
       <p>Dogs. Alguns direitos reservados.</p>
       <p>
         Orgulhosamente desenvolvido no curso React Completo da{" "}
-        <a href="https://origamid.com" target="_blank">
+        <a href="https://origamid.com" target="_blank" rel="noreferrer">
           Origamid
         </a>
       </p>
