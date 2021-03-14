@@ -42,7 +42,7 @@ export default function LoginPasswordReset() {
   }
 
   return (
-    <div>
+    <section className="animeLeft" style={{ marginTop: "20vh" }}>
       <Head title="Recuperar senha" />
 
       <h1 className="title">Redefina sua senha</h1>
@@ -61,6 +61,6 @@ export default function LoginPasswordReset() {
         )}
       </form>
       {error && <Error error={error} />}
-    </div>
+    </section>
   );
 }
