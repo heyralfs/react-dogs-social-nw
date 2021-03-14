@@ -7,5 +7,5 @@ Projeto final do curso React Completo da [Origamid](https://origamid.com).
 Você pode testá-lo [clicando aqui](https://heyralfs.github.io/dogs-app/).
 
 Navegue, interaja, poste fotos criando seu próprio usuário, ou utilize o usuário de testes:
-usuário: dog
-senha: dog
+-usuário: dog
+-senha: dog
