@@ -11,3 +11,19 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.noPhotosYet h3 {
+  margin: 1rem 0;
+}
+
+.noPhotosYet p {
+  line-height: 1.5;
+}
+.noPhotosYet a {
+  font-weight: 700;
+  color: #fb1;
+}
+
+.noPhotosYet a:hover {
+  text-decoration: underline;
+}
