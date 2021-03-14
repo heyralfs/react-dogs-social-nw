@@ -9,10 +9,10 @@ const UserHeader = () => {
 
   useEffect(() => {
     switch (location.pathname) {
-      case "/conta/postar":
+      case "/dogs-app/conta/postar":
         setTitle("Nova Foto");
         break;
-      case "/conta/estatisticas":
+      case "/dogs-app/conta/estatisticas":
         setTitle("Estatísticas");
         break;
       default:

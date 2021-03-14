@@ -11,7 +11,7 @@ import NotFound from "../NotFound";
 const Login = () => {
   const { isLogged } = useContext(UserContext);
 
-  if (isLogged) return <Navigate to="/conta" />;
+  if (isLogged) return <Navigate to="/dogs-app/conta" />;
 
   return (
     <section className={styles.login}>

@@ -38,7 +38,7 @@ const UserHeaderNav = () => {
         }`}
       >
         <NavLink
-          to="/conta"
+          to="/dogs-app/conta"
           end
           title="Minhas fotos"
           activeClassName={styles.active}
@@ -47,7 +47,7 @@ const UserHeaderNav = () => {
           {isMobile && "Minhas Fotos"}
         </NavLink>
         <NavLink
-          to="/conta/estatisticas"
+          to="/dogs-app/conta/estatisticas"
           title="Estatísticas"
           activeClassName={styles.active}
         >
@@ -55,7 +55,7 @@ const UserHeaderNav = () => {
           {isMobile && "Estatísticas"}
         </NavLink>
         <NavLink
-          to="/conta/postar"
+          to="/dogs-app/conta/postar"
           title="Nova Foto"
           activeClassName={styles.active}
         >

@@ -37,13 +37,13 @@ export default function LoginForm() {
         )}
         <Error error={error && "Usuário ou senha incorretos."} />
       </form>
-      <Link className={styles.lost} to="/login/perdeu">
+      <Link className={styles.lost} to="/dogs-app/login/perdeu">
         Esqueceu sua senha?
       </Link>
       <div className={styles.cadastro}>
         <h2 className={styles.subtitle}>Cadastre-se</h2>
         <p>Ainda não possui conta? Cadastre-se no site.</p>
-        <Link className={stylesBtn.button} to="/login/criar">
+        <Link className={stylesBtn.button} to="/dogs-app/login/criar">
           Cadastrar
         </Link>
       </div>

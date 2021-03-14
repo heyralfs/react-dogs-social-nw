@@ -10,17 +10,17 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <nav className={`${styles.nav} container`}>
-        <Link to="/" className={styles.logo} aria-label="Dogs - Home">
+        <Link to="/dogs-app" className={styles.logo} aria-label="Dogs - Home">
           <Dogs />
         </Link>
         {data ? (
           <>
-            <Link to="/conta" className={styles.login}>
+            <Link to="/dogs-app/conta" className={styles.login}>
               {data.nome}
             </Link>
           </>
         ) : (
-          <Link to="/login" className={styles.login}>
+          <Link to="/dogs-app/login" className={styles.login}>
             Login | Cadastro
           </Link>
         )}
